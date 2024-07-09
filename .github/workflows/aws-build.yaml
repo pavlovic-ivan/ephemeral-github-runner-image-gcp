@@ -9,8 +9,6 @@ on:
         options: 
         - aws_dev
         - aws_prod
-        - aws_dev_parquetsharp
-        - aws_prod_parquetsharp
 
 jobs:
   build:
