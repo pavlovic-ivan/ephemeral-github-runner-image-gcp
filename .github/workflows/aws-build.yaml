@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         aws-region: [us-east-1, us-west-2]
-        arch: [amd64, amd64]
+        arch: [amd64, arm64]
 
     steps:
       - name: Checkout Packer project
