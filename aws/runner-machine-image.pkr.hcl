@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "runner_machine_image" {
-  ami_name      = format("%s-%s-%s", var.gr_oss_image_name, replace(trim(var.runner_version, "v"), ".", ""), var.arch)
+  ami_name      = format("%s-%s-latest", var.gr_oss_image_name, var.arch)
   instance_type = var.instance_type
   region        = var.region
   source_ami_filter {
@@ -23,6 +23,7 @@ source "amazon-ebs" "runner_machine_image" {
   ssh_username = "ubuntu"
   tags = {
     map-migrated = "d-server-01068mdjl5jze3"
+    runner-version = var.runner_version
   }
 }
 
