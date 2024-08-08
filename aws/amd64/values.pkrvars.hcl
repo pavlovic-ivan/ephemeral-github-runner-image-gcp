@@ -1,4 +1,4 @@
-source_image            = "Deep Learning Driver AMI GPU (Ubuntu 20.04)"
+source_image            = "Deep Learning OSS Nvidia Driver AMI GPU TensorFlow 2.16 (Ubuntu 20.04) 20240806"
 instance_type           = "g4dn.2xlarge"
 arch                    = "amd64"
 nvidia_major_version    = "510"
