@@ -5,5 +5,3 @@ nvidia_major_version    = "510"
 script                  = "setup_without_nvidia.sh"
 image_owner             = "898082745236"
 gr_oss_image_name       = "gross-cuda-nvidia-ghrunner"
-
-Deep Learning AMI GPU TensorFlow 2.8.2 (Ubuntu 20.04)
